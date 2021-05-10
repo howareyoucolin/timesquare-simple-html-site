@@ -1,0 +1,80 @@
+section.hero {
+  display: flex;
+  background: $dark-red;
+  color: $white;
+  height: 550px;
+  overflow: hidden;
+
+  .image-wrap {
+    flex: 0 0 60%;
+    height: 550px;
+    background-image: url(/images/banner.jpg);
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .content-wrap {
+    flex: 0 0 40%;
+    height: 550px;
+
+    .promo {
+      display: block;
+      box-sizing: border-box;
+      background: $red;
+      padding: 25px 100px 25px 25px;
+      width: 500px;
+      height: 300px;
+      border-top-right-radius: 150px;
+      border-bottom-right-radius: 150px;
+      margin-top: 150px;
+      margin-left: -200px;
+
+      h2 {
+        margin-bottom: 20px;
+      }
+
+      p {
+        margin-bottom: 20px;
+      }
+
+      a {
+        @extend .btn;
+        @extend .btn-info;
+        background: $dark-red;
+        color: $white;
+        outline: 0;
+        border: 1px solid $dark-red;
+        text-transform: uppercase;
+        padding: 10px 25px;
+
+        &:hover {
+          background: $dark-red;
+          border: 1px solid $dark-red;
+        }
+      }
+
+      @include tablet {
+        padding: 25px 100px 25px 25px;
+        width: 450px;
+        height: 250px;
+        border-top-right-radius: 120px;
+        border-bottom-right-radius: 120px;
+        margin-top: 175px;
+        margin-left: -175px;
+      }
+
+      @include phone {
+        padding: 25px;
+        width: 315px;
+        height: auto;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+        margin-top: 175px;
+        margin-left: -190px;
+      }
+
+    }
+  }
+}

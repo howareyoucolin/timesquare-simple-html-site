@@ -1,0 +1,28 @@
+header {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 60px;
+  background: rgba($white, 0.5);
+  z-index: 99;
+
+  .wrap {
+    @extend .container;
+
+    h1 {
+      text-transform: uppercase;
+      line-height: 60px;
+      font-size: 28px;
+
+      @include tablet{
+        font-size: 22px;
+      }
+
+      @include phone{
+        font-size: 16px;
+      }
+
+    }
+  }
+}

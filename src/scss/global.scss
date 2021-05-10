@@ -1,0 +1,56 @@
+$dark-red: #26090b;
+$white: #ffffff;
+$black: #000000;
+$red: #aa111b;
+$brown: #73494a;
+
+body {
+  background: $brown;
+  font-size: 14px;
+  font-family: "Lato", sans-serif;
+
+  @include tablet{
+    font-size: 13px;
+  }
+
+  @include phone{
+    font-size: 12px;
+  }
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Mansalva", sans-serif;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 40px;
+
+  @include tablet{
+    font-size: 32px;
+  }
+
+  @include phone{
+    font-size: 24px;
+  }
+
+}
+
+h3 {
+  font-size: 30px;
+
+  @include tablet{
+    font-size: 24px;
+  }
+
+  @include phone{
+    font-size: 16px;
+  }
+
+}

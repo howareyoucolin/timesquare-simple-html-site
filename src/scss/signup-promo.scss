@@ -1,0 +1,30 @@
+section.signup-promo {
+  background: $white;
+
+  .wrap {
+    @extend .container;
+
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    a {
+      @extend .btn;
+      @extend .btn-info;
+
+      display: inline-block;
+      background: $red;
+      color: $white;
+      outline: 0;
+      border: 1px solid $red;
+      text-transform: uppercase;
+      padding: 10px 25px;
+
+      &:hover {
+        background: $red;
+        border: 1px solid $red;
+      }
+    }
+  }
+}
